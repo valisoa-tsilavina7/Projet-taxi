@@ -1,0 +1,2951 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* **************************LE HEADER************************ */
+header{
+    background: url('image/bghead.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+/* ****************LE NAV********** */
+header nav{
+    position:fixed;
+    z-index:4;
+    width:95%;
+    height:15%;
+    background-color:rgba(0, 0, 0, 0.753);
+    backdrop-filter: blur(20px);
+    display: flex;
+
+}
+
+
+ /* 1) le logo header  */
+header nav .logo{
+    width:40%;
+    height:100%;
+    /* background-color: RED; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+header nav .logo h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+
+    font-size:3vw;
+    color:white;
+}
+header nav .logo h2 span{
+    color:yellow;
+}
+
+header nav .logo h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+
+    font-size:1.2vw;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+
+
+
+
+/* 2)**** les lien UL header  */
+
+header nav ul{
+    width: 60%;
+    height: 100%;
+    /* background-color: chocolate; */
+
+    display:flex;
+    align-items: center;
+    /* justify-content:space-between; */
+}
+
+header nav ul li{
+    width:12%;
+    height:50%;
+    margin-right:3%;
+
+
+    border-radius:7vw;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    transition: all 0.15s;
+
+}
+header nav ul li:hover{
+    background-color: yellow;
+}
+header nav ul li:hover a{
+    color:black;
+}
+
+header nav ul li:nth-child(5){
+    width:20%;
+    border-radius:3vw;
+}
+header nav ul li:nth-child(6),header nav ul li:nth-child(3){
+    width:15%;
+    border-radius:5vw;
+}
+
+header nav ul li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+
+    font-size:1.2vw;
+    color:white;
+    font-size:1.2vw;
+    transition: all 0.30s;
+}
+
+
+
+
+
+/* 3)************** LE TEXTE HEADER ************** */
+header div.texte{
+    width:95%;
+    height:50%;
+    /* background-color: green; */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header div.texte h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:900;
+
+    font-size:3vw;
+    color:yellow;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+header div.texte h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:900;
+
+    font-size:6vw;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+header div.texte p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+
+    font-size:2vw;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+
+
+/* 3)******************ImageTaxi********* */
+header div.imageTaxi{
+    position:absolute;
+   
+    width:50%;
+    height:70%;
+
+    top:50%;
+    left: 25%;
+    /* background-color: aqua; */
+}
+header div.imageTaxi img{
+    width:100%;
+    height:100%;
+    animation: taxiCouleur 2s infinite;
+}
+@keyframes taxiCouleur {
+    0%{
+        filter:hue-rotate(210deg);
+    }
+    50%{
+        filter:hue-rotate(400deg);
+    }
+    100%{
+        filter:hue-rotate(800deg);
+    }
+}
+
+
+
+
+
+/* ***********************************LA SECTION BOOK********************* */
+
+section.book{
+    width:100%;
+    height:100vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top:10%;
+
+
+
+}
+
+/* 1) le div LEFT */
+section.book .left{
+    width:40%;
+    height:85%;
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: chocolate; */
+}
+
+section.book .left h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+
+    font-size:2vw;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    margin-bottom:3%;
+
+}
+section.book .left h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:900;
+
+    font-size:3vw;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    margin-bottom:3%;
+
+}
+
+section.book .left p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+
+    font-size:1.2vw;
+    color: black;
+    letter-spacing:1px;
+    line-height:2vw;
+
+    margin-bottom:15%;
+
+}
+section.book .left button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.2vw;
+    width:30%;
+    height:15%;
+    border:0;
+    border-radius:0.6vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.986);
+}
+
+
+
+/* 2) le div RIGHT */
+section.book .right{
+    width:30%;
+    height: 85%;
+    margin-left:10%;
+
+
+    display:flex;
+    flex-direction: column;
+}
+section.book .right h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:900;
+
+    font-size:2vw;
+    color:white;
+    letter-spacing:1px;
+    line-height:2vw;
+    width:100%;
+    height:15%;
+    display:flex;
+    align-items: center;
+    padding-left:3%;
+    background-color:black;
+
+}
+section.book .right h3 span{
+    color: yellow;
+}
+
+
+section.book .right form{
+    width:100%;
+    height:85%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    background-color:white;
+}
+
+section.book .right form input{
+    width:45%;
+    height:15%;
+    margin-left:2%;
+    margin-right:3%;
+    margin-top:2%;
+    margin-bottom:3%;
+    border:0;
+
+    border-bottom:solid 2px black;
+
+
+    padding:3%;
+    background-color: transparent;
+    color: black;
+}
+
+section.book .right form label{
+
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+    text-align: center;
+    
+    font-size:2vw;
+    color:black;
+    width:95%;
+
+    cursor: pointer;
+    height:15%;
+    /* height:40%; */
+    background-color:yellow;
+    margin:0 auto;
+    transition: all 0.20s ease;
+}
+
+section.book .right form label:hover{
+    height:40%;
+    background-color:transparent;
+}
+section.book .right form label:hover ul{
+    display:flex;
+}
+
+
+
+
+section.book .right form label ul{
+    width:100%;
+    height:70%;
+    font-size:1.7vw;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: none;
+}
+section.book .right form label ul li{
+    height:30%;
+    transition: all 0.15s;
+    color:black;
+}
+
+section.book .right form label ul li:hover{
+    background-color:rgba(0, 0, 0, 0.781);
+    color:white;
+}
+
+
+
+
+section.book .right form button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+    font-size:1vw;
+    
+    letter-spacing: 1px;
+    width:95%;
+    height:13%;
+    margin:0 auto;
+    color: white;
+    border:0;
+    background-color:black;
+}
+
+
+
+
+
+
+
+/* ***********************************LA SECTION TARIFF ********************* */
+
+section.tariff{
+    width:100%;
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+
+
+    /* background-color: green; */
+    padding-top:3%;
+}
+
+/* 1)********** OUR TARRIFF */
+section.tariff h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+
+    color:yellow;
+    font-size:2.5vw;
+}
+section.tariff h2 span{
+   color:black;
+   margin-top:-7%;
+   font-size: 3vw;
+}
+
+
+/* 2)********** le DIV les TAXI */
+section.tariff div.lestaxi{
+    width:80%;
+    height:80%;
+
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    margin:0 auto;
+    /* background-color: aqua; */
+}
+
+
+
+section.tariff div.lestaxi .element{
+    width:30%;
+    height:95%;
+    position: relative;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-color: chartreuse; */
+}
+
+
+
+section.tariff div.lestaxi .element::before{
+    position:absolute;
+    z-index:1;
+    content:"";
+    width:100%;
+    height:3%;
+    bottom:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+
+    background-color:yellow;
+}
+
+
+section.tariff div.lestaxi .element img{
+    width:90%;
+    height:40%;
+    z-index:2;
+    margin-bottom:7%;
+}
+
+section.tariff div.lestaxi .element h3{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    z-index:2;
+
+    color:black;
+    font-size:2vw;
+    margin-bottom:3%;
+}
+
+section.tariff div.lestaxi .element p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:300;
+    z-index:2;
+
+
+    color:black;
+    font-size:1.2vw;
+    margin-bottom:5%;
+}
+
+section.tariff div.lestaxi .element h4{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+    z-index:2;
+
+    color:yellow;
+    font-size:2vw;
+    letter-spacing: 1px;
+    margin-bottom:5%;
+}
+
+section.tariff div.lestaxi .element button{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+
+    z-index:2;
+
+    width:40%;
+    height:10%;
+    border:0;
+    border-radius:0.5vw;
+    background-color: yellow;
+    margin-bottom:10%;
+    transition: all 0.5s;
+}
+
+
+/* ***********animation*********** */
+section.tariff div.lestaxi .element:hover:before{
+    background-color:yellow;
+    height:85%;
+    
+}
+section.tariff div.lestaxi .element:hover button{
+   color:white;
+   background-color: black;
+}
+
+section.tariff div.lestaxi .element:hover h4{
+    color: black;
+ }
+
+
+
+
+
+
+section.tariff div.lestaxi .element i{
+    position:absolute;
+    font-size:5vw;
+
+    z-index:2;
+
+    top: 38%;
+    left: 37%;
+    transition: all;
+    display: none;
+
+    /* animation:star 2s forwards; */
+}
+
+section.tariff div.lestaxi .element:hover i{
+    display:flex;
+    animation:star 2s forwards;
+    color:white;
+
+}
+
+@keyframes star{
+    0%{
+        font-size:3vw;
+    }
+
+    10%{
+        font-size:6vw;
+
+    }
+    20%{
+        font-size:12vw;
+        transform:rotate(360deg);
+
+    }
+
+    30%{
+        font-size:3vw;
+        transform:rotate(-360deg);
+
+
+    }
+
+    40%{
+        font-size:3vw;
+        top: 57%;
+        left: 37%;
+        /* transform:rotate(360deg); */
+
+
+    }
+
+    /* 50%{
+        font-size:3vw;
+        top: 81%;
+        left: 37%;
+    } */
+
+    100%{
+        font-size:2vw;
+        top: 89%;
+        left:85%;
+        transform:rotate(360deg);
+
+    }
+}
+
+
+
+
+
+
+
+/* <!-- **********************LA SECTION BEST***************** --> */
+
+section.best{
+    margin-top:5%;
+    width: 100%;
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:7% 0;
+
+    padding-bottom:3%;
+
+
+    background: url('image/bgbody.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 1)**************LE TITRE  */
+section.best h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+    color: yellow;
+    font-size:2vw;
+    letter-spacing: 1px;
+
+    margin-bottom:2%;
+}
+section.best h2 span{
+    color:white;
+    font-size:3vw;
+}
+
+
+
+/* 2° ) ***************le LOGO  */
+
+section.best div.logo{
+    width:80%;
+    height:70%;
+    display: flex;
+    margin-left:3%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    /* background-color: yellow; */
+    margin-bottom:1%;
+}
+
+section.best div.logo .element{
+    width:45%;
+    height:45%;
+    margin-bottom:2%;
+
+    display:flex;
+    justify-content:space-between;
+    /* background-color: green; */
+}
+section.best div.logo .element i{
+    width:20%;
+    height:70%;
+    background-color:yellow;
+    border-radius:50%;
+
+    font-size:2vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.best div.logo .element .texte{
+    width:70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: chocolate; */
+}
+section.best div.logo .element .texte h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+    color: yellow;
+    font-size:1.5vw;
+    letter-spacing: 1px;
+
+    margin-bottom:2%;
+}
+section.best div.logo .element .texte p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    color:white;
+    font-size:1vw;
+    letter-spacing: 1px;
+
+    margin-bottom:2%;
+}
+
+
+/* 3)********* BUTTON  */
+section.best button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+    color:black;
+    font-size:1vw;
+    letter-spacing: 1px;
+
+    background-color: yellow;
+    width:10%;
+    height: 10%;
+    border:0;
+    margin-top:2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ****************************LA SECTION DOWNLOAD ********* */
+
+section.download{
+    width:100%;
+    height:100vh;
+    padding-top:5%;
+
+
+    display:flex;
+    flex-direction: column;
+    /* background-color: green; */
+}
+
+
+
+/* 1) le titre  */
+section.download h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+    color: yellow;
+    font-size:2vw;
+    letter-spacing: 1px;
+
+    margin-bottom:2%;
+    text-align: center;
+}
+
+section.download h2 span{
+    color:black;
+    font-size:2.5vw;
+}
+
+
+/* 2) le DIV  */
+section.download div.download-body{
+    width:80%;
+    height:80%;
+
+    display: flex;
+    justify-content: space-evenly;
+    margin:0 auto;
+    /* background-color: aqua; */
+}
+
+section.download div.download-body .texte{
+    width:55%;
+    height:100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+section.download div.download-body .texte h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:700;
+    color:black;
+    font-size:2.5vw;
+    letter-spacing: 1px;
+
+    margin-bottom:2%;
+}
+
+section.download div.download-body .texte p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    color:black;
+    font-size:1.5vw;
+    letter-spacing: 1px;
+
+    margin-bottom:2%;
+}
+
+
+section.download div.telephone{
+    width:30%;
+    height:100%;
+
+    /* background-color: WHITE; */
+}
+section.download div.telephone img{
+   width:100%;
+   height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *************************LE FOOTER************** */
+
+footer{
+    width:100%;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top:10%;
+
+    background:url('image/bgfooter2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+footer .body{
+   width:90%;
+   height:90%;
+   display:flex;
+   align-items: center;
+   justify-content:space-evenly;
+
+   /* background-color:green; */
+}
+footer .body .element{
+    width:25%;
+    height:80%;
+
+    /* background-color:chocolate; */
+}
+footer .body .element h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:700;
+    color:WHITE;
+    font-size:2vw;
+    letter-spacing: 1px;
+
+    margin-bottom:5%;
+}
+footer .body .element hr{
+    background-color:yellow;
+    border:0;
+    width:100%;
+    height:2%;
+
+    margin-bottom:10%;
+}
+
+footer .body .element p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    color:WHITE;
+    font-size:1.5vw;
+    letter-spacing: 1px;
+
+    margin-bottom:20%;
+    margin-left:5%;
+}
+
+
+footer .body .element:nth-child(1) i{
+    color:yellow;
+    font-size:1.5vw;
+    letter-spacing: 1px;
+
+    margin-bottom:20%;
+    margin-left:5%;
+}
+
+footer .body .element:nth-child(2) h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    color:yellow;
+    font-size:1.5vw;
+    letter-spacing: 1px;
+
+    margin-bottom:0%;
+    margin-left:5%;
+}
+footer .body .element:nth-child(2) i{
+    font-size:1.5vw;
+    margin-bottom:5%;
+    color:WHITE;
+}
+
+footer .body .element:nth-child(2) h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    color:yellow;
+    font-size:1.5vw;
+    letter-spacing: 1px;
+
+    margin-bottom:0%;
+    margin-left:5%;
+}
+footer .body .element:nth-child(2) i{
+    font-size:1.5vw;
+    margin-bottom:5%;
+    color:WHITE;
+    margin-left:5%;
+}
+
+
+
+
+
+footer .body .element:nth-child(3) h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    color:white;
+    font-size:1.4vw;
+    letter-spacing: 1px;
+    line-height:2vw;
+
+    margin-bottom:15%;
+    margin-left:5%;
+}
+footer .body .element:nth-child(3) h4 span i{
+    font-size:1.5vw;
+    margin-right:3%;
+}
+
+
+
+
+
+
+footer .foot{
+    width:90%;
+    height:10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.5vw;
+    color: white;
+
+    background-color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ***************************************LES MEDIA QUERRY************ */
+
+@media (max-width:820px){
+    
+    /* ****************LE NAV********** */
+    header nav{
+        position:fixed;
+        z-index:4;
+        width:100%;
+        height:15%;
+        /* background-color: yellow; */
+        display: flex;
+      
+    }
+      
+      
+    /* 1) le logo header  */
+    header nav .logo{
+        width:60%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        padding-left:5%;
+        justify-content: center;
+    }
+
+    header nav .logo h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 900;
+    
+        font-size:4vw;
+        color:white;
+    }
+    header nav .logo h2 span{
+        color:yellow;
+    }
+    
+    header nav .logo h3{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:600;
+    
+        font-size:2vw;
+        color:white;
+        text-transform: uppercase;
+        letter-spacing:1px;
+    }
+
+
+
+
+
+    /* /***** le menu *********** */
+    header nav .menu {
+        width:40%;
+        height: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        transition:0.5s;
+    }
+
+    header nav .menu .toggle{
+        position:relative;
+        left:25%;
+        width:20%;
+        height:5%;
+        background-color:white;
+    }
+    header nav .menu .toggle::before,header nav .menu .toggle::after{
+        position: absolute;
+        content:" ";
+        width:100%;
+        height:100%;
+        background-color:white;
+        transition:0.5s;
+    }
+
+    header nav .menu .toggle::before{
+        top: 10px;
+    }
+    header nav .menu .toggle::after{
+        top:-10px;
+    }
+
+
+
+    /* 2)**** les lien UL header  */
+
+    header nav ul{
+        position: fixed;
+        z-index:5;
+        width: 60%;
+        height: 800%;
+        background-color:rgba(0, 0, 0, 0.712);
+        backdrop-filter: blur(3vw);
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+        transition: all 0.5s;
+        transform: translateX(-100%);
+        
+    }
+
+    header nav ul li{
+    width:80%;
+    height:10%;
+    margin-right:3%;
+    margin-top:3%;
+
+
+    border-radius:1vw;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    transition: all 0.15s;
+
+    }
+
+    header nav ul li:nth-child(5){
+        width:80%;
+        border-radius:1vw;
+    }
+    header nav ul li:nth-child(6),header nav ul li:nth-child(3){
+        width:80%;
+        border-radius:1vw;
+
+    }
+    
+    header nav ul li a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:800;
+    
+     
+        color:white;
+        font-size:3vw;
+        transition: all 0.30s;
+    }
+
+
+    /* /********* ANIMATION CLICK  */
+    
+    header nav.active .menu .toggle{
+        background-color: transparent;
+    }
+    header nav.active .menu .toggle::after{
+        background-color:white;
+        top:0;
+        transform: rotate(45deg);
+    }
+    header nav.active .menu .toggle::before{
+        background-color:white;
+        top:0;
+        transform: rotate(-45deg);
+    }
+
+    header nav.active ul{
+       animation:menu 1s forwards;
+    }
+
+
+    @keyframes menu {
+        0%{
+            display: flex;
+           transform: translateX(-100%);
+        }
+
+        100%{
+            display:flex;
+            transform: translateX(0);
+        }
+    }
+
+    header nav.desactive ul{
+        animation: deMenu 1s forwards
+    }
+    @keyframes deMenu {
+        0%{
+            display:flex;
+            transform: translateX(0);
+        }
+        100%{
+            display: flex;
+           transform: translateX(-100%);
+        }
+    }
+
+
+
+
+
+
+    
+    /* 3)************** LE TEXTE HEADER ************** */
+   header div.texte{
+    width:95%;
+    height:50%;
+    /* background-color: green; */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   header div.texte h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:900;
+
+    font-size:4vw;
+    color:yellow;
+    text-transform: uppercase;
+    letter-spacing:1px;
+   }
+   header div.texte h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:900;
+
+    font-size:7vw;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing:1px;
+   }
+   header div.texte p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+    font-size:4vw;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    display:none;
+   }
+
+   /* 3)******************ImageTaxi********* */
+   header div.imageTaxi{
+    position:absolute;
+   
+    width:70%;
+    height:70%;
+
+    top:45%;
+    left:15%;
+    /* background-color: aqua; */
+  }
+
+
+   
+
+
+  /* ***********************************LA SECTION BOOK********************* */
+
+section.book{
+    width:100%;
+    height:200vh;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    
+    padding-top:20%;
+
+
+
+}
+
+  /* 1) le div LEFT */
+section.book .left{
+    height:40%;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom:10%;
+    
+}
+
+section.book .left h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+
+    font-size:3vw;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    margin-bottom:3%;
+
+}
+section.book .left h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:900;
+
+    font-size:4vw;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    margin-bottom:3%;
+
+}
+
+section.book .left p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+
+    font-size:2vw;
+    color: black;
+    letter-spacing:1px;
+    line-height:2.5vw;
+
+    margin-bottom:10%;
+
+}
+section.book .left button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:2vw;
+    width:30%;
+    height:15%;
+    border:0;
+    border-radius:0.6vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.986);
+}
+
+
+
+/* 2) le div RIGHT */
+  section.book .right{
+    width:90%;
+    height:50%;
+    margin:0 auto;
+
+
+    display:flex;
+    flex-direction: column;
+  }
+  section.book .right h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:900;
+
+    font-size:3vw;
+    color:white;
+    letter-spacing:1px;
+    width:100%;
+    height:15%;
+    display:flex;
+    align-items: center;
+    padding-left:3%;
+    background-color:black;
+
+  }
+  section.book .right h3 span{
+    color: yellow;
+  }
+
+
+  section.book .right form{
+    width:100%;
+    height:85%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    background-color:white;
+    overflow: hidden;
+  }
+
+  section.book .right form input{
+    width:45%;
+    height:15%;
+    margin-left:2%;
+    margin-right:3%;
+    margin-top:2%;
+    margin-bottom:3%;
+    border:0;
+
+    border-bottom:solid 2px black;
+
+
+    padding:3%;
+    background-color: transparent;
+    color: black;
+  }
+
+  section.book .right form label{
+
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+    text-align: center;
+    
+    font-size:4vw;
+    color:black;
+    width:95%;
+
+    cursor: pointer;
+    height:15%;
+    /* height:40%; */
+    background-color:yellow;
+    margin:0 auto;
+    transition: all 0.20s ease;
+ }
+
+  section.book .right form label:hover{
+    height:40%;
+    background-color:transparent;
+  }
+  section.book .right form label:hover ul{
+    display:flex;
+  }
+
+
+
+
+  section.book .right form label ul{
+    width:100%;
+    height:70%;
+    font-size:2vw;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: none;
+  }
+  section.book .right form label ul li{
+    height:30%;
+    transition: all 0.15s;
+    color:black;
+  }
+
+  section.book .right form label ul li:hover{
+    background-color:rgba(0, 0, 0, 0.781);
+    color:white;
+  }
+
+
+
+
+  section.book .right form button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+    font-size:3vw;
+    
+    letter-spacing:5px;
+    width:95%;
+    height:13%;
+    margin:0 auto;
+    color: white;
+    border:0;
+    background-color:black;
+  }
+
+
+
+
+
+
+  
+
+   /* ***********************************LA SECTION TARIFF ********************* */
+
+  section.tariff{
+    margin-top:10%;
+    width:100%;
+    height:300vh;
+    display: flex;
+    flex-direction: column;
+
+
+    /* background-color: green; */
+    padding-top:3%;
+   }
+
+/* 1)********** OUR TARRIFF */
+section.tariff h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+
+    color:yellow;
+    font-size:4vw;
+}
+section.tariff h2 span{
+   color:black;
+   margin-top:-7%;
+   font-size: 3vw;
+}
+
+
+/* 2)********** le DIV les TAXI */
+section.tariff div.lestaxi{
+    width:90%;
+    height:90%;
+
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    margin:0 auto;
+    /* background-color: aqua; */
+}
+
+
+
+section.tariff div.lestaxi .element{
+    height:30%;
+    width:95%;
+    position: relative;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-color: chartreuse; */
+}
+
+
+
+section.tariff div.lestaxi .element::before{
+    position:absolute;
+    z-index:1;
+    content:"";
+    width:80%;
+    height:3%;
+    bottom:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+
+    background-color:yellow;
+}
+
+
+section.tariff div.lestaxi .element img{
+    width:40%;
+    height:50%;
+    z-index:2;
+    margin-bottom:3%;
+}
+
+section.tariff div.lestaxi .element h3{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    z-index:2;
+
+    color:black;
+    font-size:3vw;
+    margin-bottom:3%;
+}
+
+section.tariff div.lestaxi .element p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    z-index:2;
+
+    width:80%;
+    color:black;
+    font-size:2vw;
+    margin-bottom:3%;
+}
+
+section.tariff div.lestaxi .element h4{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+    z-index:2;
+
+    color:yellow;
+    font-size:3vw;
+    letter-spacing: 1px;
+    margin-bottom:3%;
+}
+
+section.tariff div.lestaxi .element button{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+
+    z-index:2;
+
+    width:30%;
+    height:20%;
+    border:0;
+    border-radius:0.5vw;
+
+    font-size:2vw;
+    background-color: yellow;
+    margin-bottom:5%;
+    transition: all 0.5s;
+}
+
+
+/* ***********animation*********** */
+section.tariff div.lestaxi .element:hover:before{
+    background-color:yellow;
+    height:85%;
+    
+}
+section.tariff div.lestaxi .element:hover button{
+   color:white;
+   background-color: black;
+}
+
+section.tariff div.lestaxi .element:hover h4{
+    color: black;
+ }
+
+
+
+
+
+
+section.tariff div.lestaxi .element i{
+    position:absolute;
+    font-size:5vw;
+
+    z-index:2;
+
+    top: 38%;
+    left: 37%;
+    transition: all;
+    display: none;
+
+    /* animation:star 2s forwards; */
+}
+
+section.tariff div.lestaxi .element:hover i{
+    display:flex;
+    animation:star 2s forwards;
+    color:white;
+
+}
+
+@keyframes star{
+    0%{
+        font-size:3vw;
+    }
+
+    10%{
+        font-size:6vw;
+
+    }
+    20%{
+        font-size:12vw;
+        transform:rotate(360deg);
+
+    }
+
+    30%{
+        font-size:3vw;
+        transform:rotate(-360deg);
+
+
+    }
+
+    40%{
+        font-size:3vw;
+        top: 57%;
+        left: 37%;
+        /* transform:rotate(360deg); */
+
+
+    }
+
+    /* 50%{
+        font-size:3vw;
+        top: 81%;
+        left: 37%;
+    } */
+
+    100%{
+        font-size:2vw;
+        top: 89%;
+        left:85%;
+        transform:rotate(360deg);
+
+    }
+}
+
+    
+     /* <!-- **********************LA SECTION BEST***************** --> */
+     
+     section.best{
+         margin-top:5%;
+         width: 100%;
+         height:90vh;
+         display:flex;
+         flex-direction: column;
+         align-items: center;
+         padding:7% 0;
+     
+         padding-bottom:3%;
+     
+     
+         background: url('image/bgbody.png');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     
+     /* 1)**************LE TITRE  */
+     section.best h2{
+         text-align: center;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight:800;
+         color: yellow;
+         font-size:3vw;
+         letter-spacing: 1px;
+     
+         margin-bottom:4%;
+     }
+     section.best h2 span{
+         color:white;
+         font-size:4vw;
+     }
+     
+     
+     
+     /* 2° ) ***************le LOGO  */
+     
+     section.best div.logo{
+         width:80%;
+         height:70%;
+         display: flex;
+         margin-left:3%;
+         align-items: center;
+         justify-content: space-between;
+         flex-wrap: wrap;
+     
+         /* background-color: yellow; */
+         margin-bottom:1%;
+     }
+     
+     section.best div.logo .element{
+         width:45%;
+         height:45%;
+         margin-bottom:2%;
+     
+         display:flex;
+         justify-content:space-between;
+         /* background-color: green; */
+     }
+     section.best div.logo .element i{
+         width:20%;
+         height:50%;
+         background-color:yellow;
+         border-radius:50%;
+     
+         font-size:3vw;
+         display:flex;
+         align-items: center;
+         justify-content: center;
+     }
+     
+     section.best div.logo .element .texte{
+         width:70%;
+         height: 90%;
+         display: flex;
+         flex-direction: column;
+     
+         /* background-color: chocolate; */
+     }
+     section.best div.logo .element .texte h3{
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight:800;
+         color: yellow;
+         font-size:2vw;
+         letter-spacing: 1px;
+     
+         margin-bottom:2%;
+     }
+     section.best div.logo .element .texte p{
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight:600;
+         color:white;
+         font-size:1.5vw;
+         letter-spacing: 1px;
+     
+         margin-bottom:2%;
+     }
+     
+     
+     /* 3)********* BUTTON  */
+     section.best button{
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight:800;
+         color:black;
+         font-size:2vw;
+         letter-spacing: 1px;
+     
+         background-color: yellow;
+         width:20%;
+         height: 15%;
+         border:0;
+         margin-top:2%;
+     }
+     
+
+
+
+
+    
+     /* ****************************LA SECTION DOWNLOAD ********* */
+     
+     section.download{
+         width:100%;
+         height:100vh;
+         padding-top:5%;
+     
+     
+         display:flex;
+         flex-direction: column;
+         /* background-color: green; */
+     }
+     
+     
+     
+     /* 1) le titre  */
+     section.download h2{
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight:800;
+         color: yellow;
+         font-size:3vw;
+         letter-spacing: 1px;
+     
+         margin-bottom:4%;
+         text-align: center;
+     }
+     
+     section.download h2 span{
+         color:black;
+         font-size:3.5vw;
+     }
+     
+     
+     /* 2) le DIV  */
+     section.download div.download-body{
+         width:80%;
+         height:80%;
+     
+         display: flex;
+         justify-content: space-evenly;
+         margin:0 auto;
+         /* background-color: aqua; */
+     }
+     
+     section.download div.download-body .texte{
+         width:55%;
+         height:100%;
+         
+         display: flex;
+         /* background-color: yellow; */
+     }
+     section.download div.download-body .texte h3{
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight:700;
+         color:black;
+         font-size:3.5vw;
+         letter-spacing: 1px;
+     
+         margin-bottom:4%;
+     }
+     
+     section.download div.download-body .texte p{
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight:600;
+         color:black;
+         font-size:2vw;
+         letter-spacing: 1px;
+     
+         margin-bottom:2%;
+     }
+     
+     
+     section.download div.telephone{
+         width:30%;
+         height:100%;
+     
+         /* background-color: WHITE; */
+     }
+     section.download div.telephone img{
+        width:100%;
+        height:100%;
+    }
+     
+     
+     
+     
+
+
+
+   
+   /* *************************LE FOOTER************** */
+   
+   footer{
+       width:100%;
+       height:150vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+
+   
+       margin-top:10%;
+   
+       background:url('image/bgfooter2.png');
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+   
+   
+   footer .body{
+      width:90%;
+      height:85%;
+      display:flex;
+      flex-direction: column;
+      /* align-items: center;
+      justify-content:space-evenly; */
+   
+      /* background-color:green; */
+   }
+   footer .body .element{
+       width:80%;
+       height:30%;
+   
+       /* background-color:chocolate; */
+   }
+   footer .body .element h2{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:700;
+       color:WHITE;
+       font-size:2.5vw;
+       letter-spacing: 1px;
+   
+       margin-bottom:3%;
+   }
+   footer .body .element hr{
+       background-color:yellow;
+       border:0;
+       width:100%;
+       height:2%;
+   
+       margin-bottom:4%;
+   }
+   
+   footer .body .element p{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:600;
+       color:WHITE;
+       font-size:1.7vw;
+       letter-spacing: 1px;
+   
+       margin-bottom:7%;
+       margin-left:3%;
+   }
+   
+   
+   footer .body .element:nth-child(1) i{
+       color:yellow;
+       font-size:2vw;
+       
+   
+       margin-left:5%;
+   }
+   
+
+   footer .body .element:nth-child(2) h4{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:600;
+       color:yellow;
+       font-size:2vw;
+       letter-spacing: 1px;
+   
+       margin-bottom:0%;
+       margin-left:5%;
+   }
+   footer .body .element:nth-child(2) i{
+       font-size:2.5vw;
+       margin-bottom:5%;
+       color:WHITE;
+       margin-left:7%;
+   }
+   
+   
+   
+   
+   
+   footer .body .element:nth-child(3) h4{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:600;
+       color:white;
+       font-size:1.7vw;
+       letter-spacing: 1px;
+       line-height:2vw;
+   
+       margin-bottom:5%;
+       margin-left:5%;
+   }
+   footer .body .element:nth-child(3) h4 span i{
+       font-size:2.5vw;
+       margin-right:3%;
+   }
+   
+   
+   
+   
+   
+   
+   footer .foot{
+       width:90%;
+       height:10%;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight: 700;
+   
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       font-size:1.7vw;
+       color: white;
+   
+       background-color:black;
+   }
+}
+
+
+
+
+
+
+
+
+/* ********************PETITE ECRAN ******************** */
+
+@media (max-width:770px){
+
+
+  /* ***********************************LA SECTION BOOK********************* */
+
+ section.book{
+    width:100%;
+    height:200vh;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    
+    padding-top:20%;
+
+
+
+ }
+
+  /* 1) le div LEFT */
+  section.book .left{
+    height:40%;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom:10%;
+    
+  }
+
+  section.book .left h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+
+    font-size:4vw;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    margin-bottom:3%;
+
+ }
+ section.book .left h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:900;
+
+    font-size:5vw;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    margin-bottom:3%;
+
+ }
+
+  section.book .left p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+
+    font-size:2.5vw;
+    color: black;
+    letter-spacing:2px;
+    line-height:4vw;
+
+    margin-bottom:5%;
+
+  }
+ section.book .left button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:2vw;
+    width:30%;
+    height:15%;
+    border:0;
+    border-radius:0.6vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.986);
+ }
+
+
+ 
+
+   
+   /* 1)********** OUR TARRIFF */
+   section.tariff h2{
+       text-align: center;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:800;
+   
+       color:yellow;
+       font-size:5vw;
+   }
+   section.tariff h2 span{
+      color:black;
+      margin-top:-10%;
+      font-size:4.5vw;
+   }
+   
+
+
+   
+   /* 2)********** le DIV les TAXI */
+   section.tariff div.lestaxi{
+       width:90%;
+       height:90%;
+   
+   
+       display:flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content:space-around;
+       margin:0 auto;
+       /* background-color: aqua; */
+   }
+   
+   
+   
+   section.tariff div.lestaxi .element{
+       height:30%;
+       width:95%;
+       position: relative;
+   
+       display:flex;
+       flex-direction: column;
+       align-items: center;
+   
+       /* background-color: chartreuse; */
+   }
+   
+   
+   
+   section.tariff div.lestaxi .element::before{
+       position:absolute;
+       z-index:1;
+       content:"";
+       width:80%;
+       height:3%;
+       bottom:0;
+       display:flex;
+       flex-direction: column;
+       align-items: center;
+       transition: all 0.5s;
+   
+       background-color:yellow;
+   }
+   
+   
+   section.tariff div.lestaxi .element img{
+       width:50%;
+       height:60%;
+       z-index:2;
+       margin-bottom:3%;
+   }
+   
+   section.tariff div.lestaxi .element h3{
+       text-align: center;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:600;
+       z-index:2;
+   
+       color:black;
+       font-size:4vw;
+       margin-bottom:3%;
+   }
+   
+   section.tariff div.lestaxi .element p{
+       text-align: center;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:600;
+       z-index:2;
+   
+       width:80%;
+       color:black;
+       font-size:2.7vw;
+       margin-bottom:3%;
+   }
+   
+   section.tariff div.lestaxi .element h4{
+       text-align: center;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:800;
+       z-index:2;
+   
+       color:yellow;
+       font-size:3.5vw;
+       letter-spacing: 1px;
+       margin-bottom:3%;
+   }
+   
+   section.tariff div.lestaxi .element button{
+       text-align: center;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:800;
+   
+       z-index:2;
+   
+       width:25%;
+       height:15%;
+       border:0;
+       border-radius:0.5vw;
+   
+       font-size:2vw;
+       background-color: yellow;
+       margin-bottom:5%;
+       transition: all 0.5s;
+   }
+   
+   
+   /* ***********animation*********** */
+   section.tariff div.lestaxi .element:hover:before{
+       background-color:yellow;
+       height:85%;
+       
+   }
+   section.tariff div.lestaxi .element:hover button{
+      color:white;
+      background-color: black;
+   }
+   
+   section.tariff div.lestaxi .element:hover h4{
+       color: black;
+    }
+   
+   
+   
+   
+   
+   
+   section.tariff div.lestaxi .element i{
+       position:absolute;
+       font-size:5vw;
+   
+       z-index:2;
+   
+       top: 38%;
+       left: 37%;
+       transition: all;
+       display: none;
+   
+       /* animation:star 2s forwards; */
+   }
+   
+   section.tariff div.lestaxi .element:hover i{
+       display:flex;
+       animation:star 2s forwards;
+       color:white;
+   
+   }
+   
+   @keyframes star{
+       0%{
+           font-size:3vw;
+       }
+   
+       10%{
+           font-size:6vw;
+   
+       }
+       20%{
+           font-size:12vw;
+           transform:rotate(360deg);
+   
+       }
+   
+       30%{
+           font-size:5vw;
+           transform:rotate(-360deg);
+   
+   
+       }
+   
+       40%{
+           font-size:5vw;
+           top: 57%;
+           left: 37%;
+           /* transform:rotate(360deg); */
+   
+   
+       }
+   
+       /* 50%{
+           font-size:3vw;
+           top: 81%;
+           left: 37%;
+       } */
+   
+       100%{
+           font-size:5vw;
+           top: 89%;
+           left:80%;
+           transform:rotate(360deg);
+   
+       }
+   }
+   
+
+
+
+
+    /* <!-- **********************LA SECTION BEST***************** --> */
+     
+   section.best{
+       margin-top:5%;
+       width: 100%;
+       height:170vh;
+       display:flex;
+       flex-direction: column;
+       align-items: center;
+       padding:7% 0;
+   
+       padding-bottom:3%;
+   
+   
+       background: url('image/bgbody.png');
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+   
+   /* 1)**************LE TITRE  */
+   section.best h2{
+       text-align: center;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:800;
+       color: yellow;
+       font-size:3vw;
+       letter-spacing: 1px;
+   
+       margin-bottom:4%;
+   }
+   section.best h2 span{
+       color:white;
+       font-size:4vw;
+   }
+   
+   
+   
+   /* 2° ) ***************le LOGO  */
+   
+   section.best div.logo{
+       width:80%;
+       height:70%;
+       display: flex;
+       margin-left:1%;
+       align-items: center;
+       justify-content: space-between;
+       flex-wrap: wrap;
+   
+       /* background-color: yellow; */
+       margin-bottom:1%;
+   }
+   
+   section.best div.logo .element{
+       width:100%;
+       height:20%;
+       margin-bottom:2%;
+   
+       display:flex;
+       justify-content:space-between;
+       /* background-color: green; */
+   }
+   section.best div.logo .element i{
+       width:17%;
+       height:80%;
+       background-color:yellow;
+       border-radius:50%;
+   
+       font-size:4vw;
+       display:flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   section.best div.logo .element .texte{
+       width:70%;
+       height: 90%;
+       display: flex;
+       flex-direction: column;
+       
+       /* background-color: chocolate; */
+   }
+   section.best div.logo .element .texte h3{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:800;
+       color: yellow;
+       font-size:3vw;
+       letter-spacing: 1px;
+   
+       margin-bottom:3%;
+   }
+   section.best div.logo .element .texte p{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:600;
+       color:white;
+       font-size:2.5vw;
+       letter-spacing: 1px;
+   
+       margin-bottom:2%;
+   }
+   
+   
+   /* 3)********* BUTTON  */
+   section.best button{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:800;
+       color:black;
+       font-size:2vw;
+       letter-spacing: 1px;
+   
+       background-color: yellow;
+       width:25%;
+       height:8%;
+       border:0;
+       margin-top:10%;
+   }
+   
+
+
+
+
+   /* ****************************LA SECTION DOWNLOAD ********* */
+   
+   section.download{
+       width:100%;
+       height:100vh;
+       padding-top:5%;
+   
+   
+       display:flex;
+       flex-direction: column;
+       /* background-color: green; */
+   }
+   
+   
+   
+   /* 1) le titre  */
+   section.download h2{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:800;
+       color: yellow;
+       font-size:3vw;
+       letter-spacing: 1px;
+   
+       margin-bottom:4%;
+       text-align: center;
+   }
+   
+   section.download h2 span{
+       color:black;
+       font-size:3.5vw;
+   }
+   
+   
+   /* 2) le DIV  */
+   section.download div.download-body{
+       width:80%;
+       height:80%;
+   
+       display: flex;
+       justify-content: space-evenly;
+       margin:0 auto;
+       /* background-color: aqua; */
+   }
+   
+   section.download div.download-body .texte{
+       width:55%;
+       height:100%;
+       
+       display: flex;
+       /* background-color: yellow; */
+   }
+   section.download div.download-body .texte h3{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:700;
+       color:black;
+       font-size:4vw;
+       letter-spacing: 1px;
+   
+       margin-bottom:5%;
+   }
+   
+   section.download div.download-body .texte p{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:600;
+       color:black;
+       font-size:3vw;
+       letter-spacing: 1px;
+   
+       margin-bottom:2%;
+   }
+   
+   
+   section.download div.telephone{
+       width:40%;
+       height:100%;
+   
+       /* background-color:aqua; */
+   }
+   section.download div.telephone img{
+      width:100%;
+      height:100%;
+  }
+   
+   
+
+
+  
+  /* *************************LE FOOTER************** */
+  
+  footer{
+      width:100%;
+      height:150vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+  
+      margin-top:10%;
+  
+      background:url('image/bgfooter2.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  
+  footer .body{
+     width:90%;
+     height:85%;
+     display:flex;
+     flex-direction: column;
+     /* align-items: center;
+     justify-content:space-evenly; */
+  
+     /* background-color:green; */
+  }
+  footer .body .element{
+      width:80%;
+      height:30%;
+  
+      /* background-color:chocolate; */
+  }
+  footer .body .element h2{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight:700;
+      color:WHITE;
+      font-size:2.5vw;
+      letter-spacing: 1px;
+  
+      margin-bottom:3%;
+  }
+  footer .body .element hr{
+      background-color:yellow;
+      border:0;
+      width:100%;
+      height:2%;
+  
+      margin-bottom:4%;
+  }
+  
+  footer .body .element p{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight:600;
+      color:WHITE;
+      font-size:2vw;
+      letter-spacing: 1px;
+  
+      margin-bottom:7%;
+      margin-left:3%;
+  }
+  
+  
+  footer .body .element:nth-child(1) i{
+      color:yellow;
+      font-size:3vw;
+      
+  
+      margin-left:5%;
+  }
+  
+
+  footer .body .element:nth-child(2){
+   margin-bottom:10%;
+ }
+  footer .body .element:nth-child(2) h4{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight:600;
+      color:yellow;
+      font-size:3vw;
+      letter-spacing: 1px;
+  
+      margin-bottom:0%;
+      margin-left:5%;
+  }
+  footer .body .element:nth-child(2) i{
+      font-size:3vw;
+      margin-bottom:5%;
+      color:WHITE;
+      margin-left:7%;
+  }
+  
+  
+  
+  
+  
+  footer .body .element:nth-child(3) h4{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight:600;
+      color:white;
+      font-size:2.2vw;
+      letter-spacing: 1px;
+      line-height:2vw;
+
+      
+      margin-bottom:5%;
+      margin-left:5%;
+  }
+  footer .body .element:nth-child(3) h4 span i{
+      font-size:3vw;
+      margin-right:3%;
+  }
+  
+  
+  
+  
+  
+  
+  footer .foot{
+      width:90%;
+      height:10%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 700;
+  
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      font-size:1.7vw;
+      color: white;
+  
+      background-color:black;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:536px){
+
+
+
+
+    
+    section.book{
+       width:100%;
+       height:200vh;
+       background-color: yellow;
+       display: flex;
+       flex-direction: column;
+       
+       padding-top:20%;
+   
+   
+   
+    }
+   
+     /* 1) le div LEFT */
+     section.book .left{
+       height:35%;
+       width:90%;
+       display: flex;
+       flex-direction: column;
+   
+       margin-bottom:10%;
+       background-color:gray;
+     }
+   
+     section.book .left h3{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:500;
+   
+       font-size:4vw;
+       color: black;
+       text-transform: uppercase;
+       letter-spacing:1px;
+       margin-bottom:3%;
+   
+    }
+    section.book .left h2{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:900;
+   
+       font-size:5vw;
+       color: black;
+       text-transform: uppercase;
+       letter-spacing:1px;
+       margin-bottom:3%;
+   
+    }
+   
+     section.book .left p{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:500;
+   
+       font-size:3vw;
+       color: black;
+       letter-spacing:2px;
+       line-height:5vw;
+   
+       margin-bottom:5%;
+   
+     }
+    section.book .left button{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight:800;
+   
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size:2vw;
+       width:30%;
+       height:15%;
+       border:0;
+       border-radius:0.6vw;
+       color: white;
+       background-color: rgba(0, 0, 0, 0.986);
+    }
+
+
+
+    section.best button{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:800;
+        color:black;
+        font-size:2vw;
+        letter-spacing: 1px;
+    
+        background-color: yellow;
+        width:25%;
+        height: 7%;
+        border:0;
+        margin-top:2%;
+    }
+    
+
+    
+    /* *************************LE FOOTER************** */
+    
+    footer{
+        width:100%;
+        height:150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+    
+        margin-top:10%;
+    
+        background:url('image/bgfooter2.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    footer .body{
+       width:90%;
+       height:85%;
+       display:flex;
+       flex-direction: column;
+       /* align-items: center;
+       justify-content:space-evenly; */
+    
+       /* background-color:green; */
+    }
+    footer .body .element{
+        width:80%;
+        height:30%;
+    
+        /* background-color:chocolate; */
+    }
+    footer .body .element h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:700;
+        color:WHITE;
+        font-size:3.5vw;
+        letter-spacing: 1px;
+    
+        margin-bottom:3%;
+    }
+    footer .body .element hr{
+        background-color:yellow;
+        border:0;
+        width:100%;
+        height:2%;
+    
+        margin-bottom:4%;
+    }
+    
+    footer .body .element p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:600;
+        color:WHITE;
+        font-size:2.7vw;
+        letter-spacing: 1px;
+    
+        margin-bottom:7%;
+        margin-left:3%;
+    }
+    
+    
+    footer .body .element:nth-child(1) i{
+        color:yellow;
+        font-size:3vw;
+        
+    
+        margin-left:5%;
+    }
+    
+  
+    footer .body .element:nth-child(2){
+     margin-bottom:10%;
+   }
+    footer .body .element:nth-child(2) h4{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:600;
+        color:yellow;
+        font-size:3vw;
+        letter-spacing: 1px;
+    
+        margin-bottom:0%;
+        margin-left:5%;
+    }
+    footer .body .element:nth-child(2) i{
+        font-size:3vw;
+        margin-bottom:5%;
+        color:WHITE;
+        margin-left:7%;
+    }
+    
+    
+    
+    
+    
+    footer .body .element:nth-child(3) h4{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:600;
+        color:white;
+        font-size:2.2vw;
+        letter-spacing: 1px;
+        line-height:2vw;
+  
+        
+        margin-bottom:5%;
+        margin-left:5%;
+    }
+    footer .body .element:nth-child(3) h4 span i{
+        font-size:3.5vw;
+        margin-right:3%;
+    }
+    
+    
+    
+    
+    
+    
+    footer .foot{
+        width:90%;
+        height:10%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+    
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-size:1.7vw;
+        color: white;
+    
+        background-color:black;
+    }
+  
+}

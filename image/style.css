@@ -1,0 +1,555 @@
+/* ********INITIALISATION************ */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* *************LE HEADER****************** */
+
+header{
+    background-image:url(bghead.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:50vw;
+    width: 100%;
+    padding:2% 3%;
+}
+
+div.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+div.logo{
+    width: 50%;
+}
+
+div.logo h2,div.logo h3{
+    color: antiquewhite;
+    font-family: monospace;
+    line-height:30px;
+}
+div.logo h2{
+    font-size: 3vw;
+}
+div.logo h2 span{
+    color:yellow;
+}
+
+
+nav{
+    width:50%;
+    padding:2% 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 1.2vw;
+}
+
+a:active{
+    color:black;
+    background-color:yellow;
+    padding:2% 20px;
+    border-radius:10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+a:hover{
+    color:black;
+    background-color:yellow;
+    padding:2% 20px;
+    border-radius:10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+/* *********le titre dans le header************ */
+
+header div.titre{
+    width: 100%;
+    text-align: center;
+}
+
+div.titre h3{
+    font-weight: bolder;
+    color:yellow;
+    font-family: monospace;
+    font-size:3vw;
+}
+
+div.titre h2{
+    font-weight: bolder;
+    color:antiquewhite;
+    font-family:monospace;
+    font-size:5vw;
+}
+
+div.titre h4{
+    font-weight: bolder;
+    color:antiquewhite;
+    font-family:monospace;
+    font-size:2vw;
+}
+
+/* ***********LES SECTION**************** */
+
+
+
+section.taxi{
+    background-color: yellow;
+    width:100%;
+    padding:10% 5%;
+    padding-bottom: 5;
+}
+/* 
+LE GRAND TAXI */
+section.taxi img{
+    position:absolute;
+    width:50%;
+    margin-top:-30%;
+    margin-left:22%;
+
+}
+section.taxi img:nth-child(1):hover{
+    filter:hue-rotate(210deg);
+}
+/* *********animation******* */
+
+section.taxi div.texte{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+section.taxi div.texte .best{
+    width:40%;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:2vw;
+}
+
+div.best button{
+    background-color: black;
+    color:antiquewhite;
+    padding:2% 5%;
+    border-radius:1vw;
+    font-size:1.5vw;
+}
+/* ********book***** */
+section.taxi div.texte .book{
+    background-color:antiquewhite;
+    width:40%;
+    height:83%;
+}
+section.taxi div.texte p{
+    font-size:1.5vw;
+}
+div.texte .book h2{
+    background-color: black;
+    color:antiquewhite;
+    padding:3% 2%;
+}
+.book h2 span{
+    color:yellow;
+}
+table{
+    margin-left:3%;
+    height:20vw;
+}
+table input{
+    width: 100%;
+    height:100%;
+}
+table button{
+    width: 100%;
+    height:100%;
+    background-color: black;
+    color: antiquewhite;
+    border-radius:1vw;
+    font-size:1.5vw;
+}
+section.taxi div.book:hover{
+    transform:scale(1.15);
+}
+********le taxi***********
+header img{
+    background-color: green;
+    margin-left: 30px;
+}
+
+
+/* ***************************LES TARIFFS************** */
+
+section.tarifs{
+    width: 100%;
+    padding:2% 0;
+}
+
+section.tarifs div.tarifs{
+    display:flex;
+    justify-content: space-evenly;
+    padding:0 5%;
+}
+
+section.tarifs h2.titre{
+    text-align: center;
+    font-family: monospace;
+    font-size:2vw;
+}
+section.tarifs h2.titre span{
+    color: yellow;
+}
+
+section.tarifs div.tariftaxi{
+    width:30%;
+    margin-top:5%;
+}
+
+
+section.tarifs img{
+    width:20%;
+    position:absolute;
+    z-index:1;
+    margin-top:-5%;
+    margin-left:3%;
+}
+section.tarifs div.texte{
+    padding:30% 5%;
+}
+section.tarifs div.texte h3{
+    font-size:2vw;
+    font-family: monospace;
+}
+section.tarifs div.texte h2{
+    font-size:2vw;
+    font-family: monospace;
+    color: yellow;
+    margin-left:30%;
+    text-shadow:0px 0px 10px black;
+}
+
+section.tarifs div.texte p{
+    font-weight: bolder;
+    font-size:1.2vw;
+}
+
+section.tarifs div.texte button{
+    background-color: yellow;
+    font-size:1vw;
+    font-weight: bolder;
+    border: 0;
+    border-radius:0.5vw;
+    padding:1% 3%;
+    margin-left:30%;
+    box-shadow:0px 0px 10px black;
+}
+
+
+/*******petites animations tariffs*******/
+section.tarifs div.tariftaxi:hover{
+    background-color: yellow;
+}
+section.tarifs div.texte button:hover{
+    background-color: black;
+    color:antiquewhite;
+}
+section.tarifs div.texte h2:hover{
+    color:black;
+    text-shadow:0px 0px 0px white;
+}
+button:hover{
+    transform: scale(1.3);
+}
+table button:hover{
+    transform:scale(1.01);
+    color: black;
+    border:0;
+    font-size:1.2vw;
+    font-weight: bolder;
+    font-family: monospace;
+    background-color:yellow;
+}
+section.tarifs i{
+    position: absolute;
+    margin-top:-3%;
+    margin-left:23%;
+    font-size:2vw;
+    color:white;
+}
+
+/* ******************SECTION WE DO BEST************* */
+
+section.wedobest{
+    background-image:url(bgbody.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:60vw;
+    padding:5% 5%;
+}
+section.wedobest h3,section.wedobest h2.than{
+    text-align: center;
+    font-size:3vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:antiquewhite;
+}
+section.wedobest h3{
+    color: yellow;
+}
+section.wedobest div.elementhaut{
+    display: flex;
+    text-align: center;
+    margin-left:10%;
+}
+section.wedobest div.text{
+    width: 60%;
+    padding:0 3%;
+}
+section.wedobest div.text h2{
+    color: yellow;
+    font-size:2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section.wedobest p{
+    font-size: 1.5vw;
+    color:antiquewhite;
+}
+section.wedobest div.haut{
+    display: flex;
+    justify-content: space-evenly;
+    padding:2% 2%;
+}
+section.wedobest i{
+    font-size:2vw;
+    background-color: yellow;
+    height:4vw;
+    width: 4vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+section.wedobest button{
+    background-color:yellow;
+    color:black;
+    padding:1% 3%;
+    font-weight: bolder;
+    border-radius:0.5vw;
+    border:0;
+    font-size:1vw;
+    margin-top:15%;
+    margin-left:0%;
+    position:absolute;
+}
+
+/* ****************LES SECTIONS SERVICE TELEPHONE********************** */
+
+section.service{
+    width:100%;
+    padding:3% 3% 3% 0%;
+}
+section.service h3.download{
+    text-align: center;
+    color: yellow;
+    font-size:2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section.service h2.best{
+    text-align: center;
+    color:black;
+    font-size:2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section.service div.download{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:10%;
+}
+
+section.service div.texte{
+    width:40%;
+    padding:1%;
+}
+
+section.service div.texte h2{
+    font-size:1.7vw;
+}
+section.service div.texte p{
+    font-size:1.5vw;
+}
+section.service div.texte button{
+    font-size:0.5vw;
+    display: flex;
+    width:13vw;
+    background-color: black;
+    color:antiquewhite;
+    border-radius:1vw;
+}
+section.service div.texte button div span{
+    font-size:0.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section.service div.button{
+    display:flex;
+    justify-content: space-evenly;
+}
+section.service div.texte button div{
+    font-size:1.5vw;
+}
+
+section.service div.telephone{
+    width: 20%;
+}
+section.service div.telephone:hover{
+    transform:scale(1.15);
+}
+/******** LA SECTION HAPPY CLIENTS *********/
+section.client{
+    background-image:url(bgfooter1.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    padding: 3% 2%;
+}
+section.client div.parentclient{
+    display: flex;
+    justify-content: space-evenly;
+}
+section.client h2{
+    color:yellow;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:2vw;
+}
+section.client h2 span{
+    color:black;
+}
+
+section.client div.client{
+    width:40%;
+    background-color:black;
+    padding:2%;
+    border-radius:1vw;
+    box-shadow:0px 0px 1vw black;
+}
+section.client div.client p{
+    font-size:1.5vw;
+    color:antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section.client div.john{
+    display: flex;
+    background-color: black;
+}
+section.client div.john h3,section.client div.john h3 span{
+    color: yellow;
+    margin-left:2%;
+    font-size:1vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 20%;
+}
+section.client div.john h3 span{
+    font-size:0.8vw;
+    color:antiquewhite;
+    background-color: black;
+}
+section.client img{
+    border-radius: 50%;
+}
+
+/* **********LA SECTION CONTACT******* */
+section.contact{
+    background: yellow;
+    padding: 3%;
+    width: 100%;
+}
+section.contact h3{
+    text-align:center;
+    font-size:2vw;
+    font-family: monospace;
+}
+section.contact h3 span{
+    text-align:center;
+    font-size:3vw;
+}
+
+
+
+/* **********LE FOOOTER********* */
+footer{
+    background-image:url(bgfooter2.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    padding: 5% 2%;
+    color:yellow;
+}
+footer div.body{
+    display: flex;
+    justify-content: space-between;
+
+}
+footer div.enfant{
+    width: 30%;
+}
+footer div.enfant h3{
+    font-family: monospace;
+    font-size: 2vw;
+    color:antiquewhite;
+}
+footer div.enfant h3 hr{
+    margin-top:2%;
+    width:70%;
+   background-color: yellow;
+}
+footer div.enfant p{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
+    color:antiquewhite;
+}
+footer i{
+    font-size:2vw;
+    margin-left:3%;
+}
+footer div.user i{
+    margin-left:2%;
+    color: antiquewhite;
+}
+footer div.user{
+    font-size:0.1vw;
+    font-family: monospace;
+}
+footer span{
+    font-size: 2vw;
+}
+
+/* footer.fi div.footer{
+    background-color: black;
+    color:antiquewhite;
+    font-size:1vw;
+    text-align: center;
+    width:100%;
+} */
+
+/* animation */
+i:hover{
+    transform: scale(2);
+    transform: rotate(360deg);
+    transition:0.5s;
+}
